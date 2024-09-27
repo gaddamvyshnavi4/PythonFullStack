@@ -1,0 +1,145 @@
+<!-- 
+ Styling text
+ -----------
+ text-align 
+    values:left , right , centre , justify
+ text-indent
+    values:number pixels
+ text-decoration
+    values:underline,overline,none,line-through
+ text-transform
+    values:Uppercase,Lowercase,Captitalize
+
+
+ Font properties:
+ -----------------
+ font-size
+    values:number em/rem
+ font-weight
+    value:normal , bold/bolder 
+ font-family
+    values:serif , san-serif ,monospace , cursive , fantasy
+ font-style
+    values:italic , oblic ,  normal/regular
+ 
+Google forms - where u r going to get the font family values from google by providing css link(cdn(content deliver network) link)
+ -->
+   
+<!-- 
+
+
+ Basically border carries 3 properties 
+
+ border-width a number followed by px , thin , thick
+ border-color like our color properties
+border-style dotted , dashed , solid , none
+
+
+
+margin :top right down left
+margin-top
+margin-left
+margin-right
+margin-bottom
+
+margin(shorthand property)
+    (one value)margin:top right down left
+    (two values)margin:top,down and right,left
+    (four values)margin:top, right, down, left
+
+padding:  top right down left
+padding-top
+padding-right
+padding-down
+paddding-left
+
+
+
+when to use what values:
+---------------------------
+width , height , margin , padding    can carry percentages , vw(view port width) , vh (view port height)
+for border and font-size we should provide pixels 
+wheras em,rem is suggested only for font size
+while we are working with bootstrap mostly we use pixels
+
+
+instead of height property we are going to use min-height followed by vh units
+-->
+<!-- in css box model is going to help us for arranging elements ,
+  changing the input field looks and making the applications responsiveness better
+  1.Border - which works as a mediator between margin and padding
+  2.margin - Which is going to provide the gap between mutltiple elements
+  3.Padding  - Which provides the space inside the content and the border
+
+  https://imagecolorpicker.com/ ->to get color from image
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #35b8a3;
+
+        }
+        .login-container{
+            background-color: white;
+            width: 30%;
+            padding: 5%;
+            /* margin: 5% 30%; */
+            margin: auto;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .login-container input{
+            width: 90%;
+            padding: 20px;
+            border-color: rgba(0,0,0,0.2);
+        }
+        .login-container input[type="checkbox"]{
+            width: 5%;
+        }
+        .checkbox{
+            text-align: left;            
+        }
+        .btn-signin{
+            color:white;
+            background-color: #0b847a;
+            padding: 15px;
+            width: 30%;
+            border:none;
+            border-radius: 5px;
+            text-transform: uppercase;
+            cursor: pointer;
+            
+        }
+        a{
+            color: #0b847a;
+            text-decoration: none;
+        }
+       h1{
+            color: #0b847a;
+            font-family: san-serif;
+            /* font-weight: 2px; */
+        }
+    </style>
+</head>
+<body>
+    
+    <form class="login-container" action="">
+        <h1 >Login</h1>
+        <p>
+        <input type="email" placeholder="Email" name="email"/></p>
+       <p> <input type="password" placeholder="Password" name="passowrd"/> </p>
+       <p class="checkbox"> <input type="checkbox"  />Show Password </p>
+       <p> <button class="btn-signin" >SIGN IN</button></p>
+        <!-- <input type="button" value="dvj"/> -->
+        <p>Forgot<a href="#"> username / password</a> ?</p>
+        <p>Don't have an account? <a href="">Sign up</a></p>
+        </p>
+    </form>
+</body>
+</html>
