@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            border:1px solid red;
+        }
+        .two{
+            position: absolute;
+            top: 30px;
+            left: 70px;
+        }
+        h1{
+            position: absolute;
+            z-index: 2;
+            left: 12%;
+            top:40px
+        }
+        .i1{
+            position: relative;
+            z-index:-1;
+        }
+        .i2{
+            position: relative;
+            z-index: 10;
+            margin-top: -6%;
+            margin-left: -14%;
+        }
+        p::first-letter{
+            color: green;
+            font-size :50px;
+        }
+        p::first-line{
+            color: orange;
+        }
+        p::before{
+            content: "text added";
+            color: blue;
+        }
+        p::after{
+            content: "text addedd";
+            color:red;
+        }
+        p::selection{
+            background-color: black;
+            color:gold;
+        }
+        .one:hover{
+            color: brown;
+        }
+        .one:active{
+            color: aquamarine;
+        }
+        .one:visited{
+            color: rgb(196, 221, 121);
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="one">one</div>
+    <div class="two">two</div>
+    <div class="three">three</div> -->
+    <h1>Welcome Blossoms season</h1>
+    <img src="https://hips.hearstapps.com/hmg-prod/images/cherry-blossom-season-65cf997a26afb.jpg" alt="" width="50%" class="i1">
+    <img src="https://www.icegif.com/wp-content/uploads/2022/11/icegif-145.gif" alt="" width="20%" class="i2">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores veniam omnis assumenda harum enim in amet earum, cum quas facere maiores et doloribus minus eos laudantium modi quod recusandae. Ducimus?</p>
+    <a href="https://www.google.com" class="one">google</a>
+</body>
+</html>
+
