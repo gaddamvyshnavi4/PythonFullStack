@@ -1,0 +1,109 @@
+###A functions is a block of organized ,
+##reusable code that is used to perform a single or multiple tasks
+#.Python gives inbuilt fuctions like print ,
+##u can make yor own function also and these are called user defines functions .
+##function blocks begin with the keyword def followed by the function name an paranthesis
+
+def add(a,b):
+          print('sum:',a+b)
+          print('difference:',a-b)
+          print('product:',a*b)
+          print('integer division',a//b)
+          print('float division',a/b)
+          print('pow division',a**b)
+add(1,2)
+add(20,900)
+add(10,8)
+
+
+##def first_last_name():
+##          print((input()+' '+input()).title())
+##first_last_name()
+
+def x():
+                    
+          print("Welcome to \"Split the bill including tip\"")
+          bill = float(input("What was the total bill? $"))
+          tip = int(input("How much tip would you like to give? 10, 12, or 15? "))
+          person = int(input("How many people to split the bill? "))
+          each_pay=(bill+tip)/person
+          print(f"Each person should pay: ${each_pay}")
+x()
+
+
+'''def add(a,b):
+    print("the sum is",a+b)
+    print("the diff is",a-b)
+    print("the product is",a*b)
+add(23,67)
+add(78,25)
+add(34526,75896)'''
+
+
+'''def div(a,b):
+    print("the int div is",a//b)
+    print("the float div is",a/b)
+    print("the power is",a**b)
+div(24,67)
+div(85,34)
+div(34.6,21.6)'''
+
+
+#runtime input
+'''def sum():
+    a=int(input("a value"))
+    b=int(input("b value"))
+    print("the sum is",a+b)
+sum()'''
+
+'''def name():
+    a=input("enter your Fname")
+    b=input("enter your Lname")
+    print(a.title()+" " +b.title())
+name()'''
+
+#return
+'''def cal(a,b):
+    c=a+b
+    d=a-b
+    e=a*b
+    return c,d,e
+print(cal(6,8))'''
+
+'''def split():
+    a=int(input("no.of friends"))
+    b=int(input("bill amount"))
+    print("split amount is ",b//a)
+split()'''
+
+'''def split():
+    a=int(input("no.of friends"))
+    b=int(input("bill amount"))
+    c=b//a
+    return c
+print(split())'''
+
+#instead of while we can call the function in loop to loop continuosly
+'''def split():
+    a=int(input("no.of friends"))
+    b=int(input("bill amount"))
+    c=b//a
+    print("split amount",c)
+    split()
+print(split())'''
+
+#.format
+'''def split():
+    a=int(input("no.of friends"))
+    b=int(input("bill amount"))
+    c=b//a
+    print("the split amount is {}".format(c))
+print(split())'''
+
+#fstring
+'''def split():
+    a=int(input("no.of friends"))
+    b=int(input("bill amount"))
+    c=b//a
+    print(f"the split amount is {c}")
+print(split())'''
