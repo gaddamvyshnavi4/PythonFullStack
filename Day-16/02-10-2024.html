@@ -1,0 +1,93 @@
+<!-- 
+css box model
+    - is used when talking aboutdesign and layout
+The css box model is essential a box that wraps aroud every HTML elements .
+It consists of :margin , borders , padding , and the actual content
+The image below illustrates the box model
+
+
+content= The content of the box , where text and images appear
+padding = clears an area arou dthe content  
+
+
+
+PSUEDO ELEMENTS
+-------------
+A CSS psuedo 
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+    #ok{
+        width: 100vw;
+        height: 33.3vh;
+
+    }
+    .one{
+        background-color: orange;
+    }
+    .two{
+        background-color: white;
+    }
+    .three{
+        background-color: green;
+    }
+    .one{
+        background-color: #ffd814;
+        color: black;
+        font-size: 12px;
+        border: none;
+        border-radius: 10px;
+        padding: 0.8% 2.7%;
+        margin-top: 15%;
+        margin-left: 30%;
+        width: 26%;
+        font-weight: 300;
+        padding: 0.6%;
+        width: 26%;
+        font-weight: 300;
+        box-shadow: 1px 2px 3px white;
+        /* border-radius: 0.8em;
+        border-color: #ffd814;
+        cursor: pointer;
+        box-shadow: ; */
+        
+    }
+    .one:hover{
+        background-color: #f1cf0a;
+    }
+    ul li{
+        /* display: inline; */
+        /* display: none; */
+        /* display:inline-block ; */
+        display: block;
+    }
+    </style>
+  </head>
+  <body>
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ul>
+    <!-- <div class="one" id="ok"> </div>
+    <div class="two" id="ok">
+<center>
+    <img 
+      src="https://static.vecteezy.com/system/resources/thumbnails/019/766/253/small_2x/ashok-chakra-logo-ashok-chakra-icon-transparent-free-png.png"
+      alt="ashok chakra" width="15%"
+    />
+</center>
+</div>
+<div class="three" id="ok"></div>   -->
+
+<button class="one">Continue</button>
+
+
+</body>
+</html>
