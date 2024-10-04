@@ -1,0 +1,87 @@
+<!-- flex parent properties (important)
+ 1 display:flex  -- horizontal
+ 2 direction
+ 3 align-content
+ 4 justify-content
+ 5 flex-flow
+ 6 align-items
+ 7 flex-wrap
+ 
+
+flex child properties
+     1.order
+     2.align-self
+     3.grow
+     4.shrink-
+
+   /* flex-direction: column-reverse;
+            /* row , row-reverse , column , column-reverse */
+            justify-content: space-evenly;
+            /* end , flex-end , start , fex-start , center
+             space-around , space-between , space-evenly */
+            align-items: flex-end;
+            /* end , center , flex-end  , flex-start*/
+             */
+            
+             align-content: end;
+             /*  */
+            flex-wrap: wrap-reverse;
+            /* wrap , wrap-reverse , nowrap */
+            
+            
+            flex-flow: column-reverse wrap-reverse ;
+
+
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .child{
+            width: 100px;
+            height: 100px ;
+        }
+        .parent{
+            border: 1px solid red;
+            height: 500px;
+            width:600px ;
+            display: flex;
+           
+          
+            
+        }
+        .one{
+
+            background-color: aqua;
+            /* flex-shrink: 2; */
+            flex-grow: 1;
+            order: -1;
+            align-self: flex-end;
+
+        }
+        .two{
+            background-color: blue;
+            flex-shrink: 3;
+            flex-grow: 6;
+            align-self: flex-start;
+        }
+        .three{
+            background-color: greenyellow;
+            flex-grow: 9;
+            order: -3;
+            align-self: center;
+        }
+    </style>
+ </head>
+ <body>
+    <div class="parent">
+    <div class="child one">one</div>
+    <div class="child two">two</div>
+    <div class="child three">three</div>
+   
+</div>
+ </body>
+ </html>
