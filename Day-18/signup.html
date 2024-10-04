@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+       *{
+    /* border:1px solid red */
+    margin:0%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.sec1{
+    display:flex;
+    flex-direction: row;
+}
+.one{
+    width:50%;
+}
+.two{
+    width:50%
+}
+.head2{
+    text-align: center;
+    color: rgb(65, 65, 240);
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: underline solid orangered;
+}
+.formy{
+    display:flex;
+    flex-direction: column;
+    margin-left: 2%;
+}
+.formy label{
+    font-size: 20px;
+    color:rgb(42, 158, 158)
+}
+input[type="text"],[type="email"],[type="password"]{
+    padding:1%;
+    border:none;
+    box-shadow:1px 2px 3px gray;
+    border-radius: 15px;
+    margin-top:1%;
+    margin-bottom: 1.8%;
+    width:80%;
+}
+.check{
+    display:flex;
+}
+.check h6{
+    font-size:14px;
+    margin-left: 2%;
+}
+input[type="checkbox"]{
+    accent-color:yellow;
+}
+.btn{
+    background-color: white;
+    border:1px solid rgb(52, 52, 204);
+    color: rgb(51, 51, 187);
+    font-size: 20px;
+    border-radius: 5px;
+    width:80%;
+    padding: 0.8%;
+    margin-top: 1%;
+}
+.btn:hover{
+    background-color: rgb(44, 44, 171);
+    color: white;
+    transform: scale(1.2);
+}
+.line{
+    width:80%;
+    margin-top: 1.5%;
+}
+.a{
+    text-decoration: none;
+    color: rgb(40, 206, 206);
+}
+.text{
+    text-align:center;
+}
+    </style>
+</head>
+<body>
+    <section class="sec1">
+        <div class="one">
+            <img src="https://cdn.dribbble.com/users/277921/screenshots/4223608/gw-dribbble.gif" width="100%"/>one
+        </div>
+        
+            <div class="two">
+                <h2 class="head">SignUp Form</h2>
+                <form class="formy">
+                    <label>username</label>
+                    <input type="text" placeholder="Eg:John"/>
+                    <label>Email</label>
+                    <input type="email" placeholder="Eg:John@gmail.com"/>
+                    <label>Phone Number</label>
+                    <input type="number" placeholder="012345678"/>
+                    <label>Password</label>
+                    <input type="password" placeholder="Eg:John45#"/>
+                    <label>Confirm Password</label>
+                    <input type="password" placeholder="Eg:John45#"/>
+                    <div class="check">
+                        <input type="checkbox"/>
+                        <h6>I Accept the rules</h6>
+                    </div>
+                    
+                    <button class="btn">Submit</button>
+                </form>
+                <hr class="line"/>
+                <h4 class="text">Already account<a href="#">Login</a></h4>
+            </div>
+        
+    </section>
+</body>
+</html>
