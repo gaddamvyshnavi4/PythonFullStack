@@ -1,0 +1,133 @@
+# *arguments  -> * is used to unpack the elements
+
+#list
+'''
+a=[1,2,3,4,5]
+print(a)
+print(*a)
+'''
+#tuple
+'''
+b=(1,2,3,4,5)
+print(b)
+print(*b)
+'''
+#set
+'''
+a={1,2,4,5}
+print(a)
+print(*a)
+'''
+#dictionary
+
+'''
+a={1:2,3:4}
+print(a)
+print(*a)
+print(**a) #error
+'''
+'''
+a,b,c=1,2,3
+print(a)
+print(b)
+print(c)
+'''
+'''
+a,b,c=1,2,3,4,5
+print(a)
+print(b)
+print(c)'''#eeror
+
+'''
+a,b,*c=1,2,3,4,5
+print(a)
+print(b)
+print(*c)
+'''
+
+'''
+a,*b,c=1,2,3,4,5
+print(a)
+print(*b)
+print(c)
+'''
+
+'''
+
+a,b,c=1,2,3,4,5
+print(a)
+print(b)
+print(c)
+'''
+
+
+'''
+a,b,c='pyt'
+print(a)
+print(b)
+print(c)
+'''
+'''
+a,b,c='pytcoourse'
+print(a)
+print(b)
+print(c)'''#error
+
+
+
+'''
+a,*b,c='pytcoourse'
+print(a)
+print(*b)
+print(c)
+'''
+'''
+a,b,c='pytc','oo','urse'
+print(a)
+print(b)
+print(c)
+'''
+
+
+#variable length argument
+
+#we can define any number of arguments ,
+#it will automatically we can define any number of arguments it will automatically stores in tuples we use * arguments
+
+'''
+
+def star(*b):
+          print(b)
+star(1,2,3,4)
+
+def check(*a):
+          print(a)
+          print(type(a))
+
+check()
+b=[1,2,4]
+check(*b)
+dict={1:2,3:4}
+check(*dict)
+'''
+
+def check1(*a):
+          d=1
+          print(a)
+          print(type(a))
+          for i in a:
+                    if(type(i) is str):
+                              continue
+                    d=d+i
+                    print(d)
+
+check1()
+check1(1,2,3)
+check1(1,2.6,7.8)
+check1(1,2,3,'adnck')
+
+
+
+
+
+
