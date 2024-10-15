@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradients</title>
+    <style>
+        .two{
+            /* background:linear-gradient(direction,colors); 
+            to left
+            to top
+            to right
+            to bottom           
+            
+            */
+            background:linear-gradient(to left,red,blue,pink);
+            width:100vw;
+            height: 100vh;
+        }
+        .three{
+            background:radial-gradient(white,pink,yellowgreen);
+            height: 100vh;
+        }
+        .overflow{
+            /* 
+            overflow: hidden
+            visible
+            scroll
+            auto; 
+            
+            overflow-x:;
+            overflow-y:*/
+            width: 100px;
+            height: 200px;
+            border:1px solid black;
+            /* overflow:scroll; */
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+        /* extra small */
+
+        @media all and (max-width:576px){
+            h1{
+                background-color:red;
+            }
+        }
+        /* small */
+        @media all and (min-width:577px) and (max-width:768px){
+            h1{
+                background-color:pink;
+            }
+        }/* medium */
+        @media all and (min-width:769px) and (max-width:992px){
+            h1{
+                background-color:blueviolet;
+            }
+        }
+        /* large */
+        @media all and (min-width:993px) and (max-width:1200px){
+            h1{
+                background-color:orange;
+            }
+        }
+        /* extra large */
+        @media all and (min-width:1201px){
+            h1{
+                background-color:greenyellow;
+            }
+        }
+    </style>
+        
+</head>
+<body>
+    <div class="two">
+        <h1>Linear Gradients</h1>
+    </div>
+    <div class="three">
+        <h1>radial Gradients</h1>
+    </div>
+    <p class="overflow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias commodi cumque quaerat quisquam illum praesentium deserunt pariatur fugit sunt laudantium placeat hic rem illo ducimus, beatae et! Optio, dolore corrupti?</p>
+
+
+    <!-- 
+    Responsive breakpoints
+
+    What are break points?
+    Breakpoints are customizable widths that determine how your responsive layout behaves across device or viewport sizes
+
+    mainly devices are categorized into 5 types of responsive Break points.They are:
+
+    1.Extra small devices      <576px
+    2.small devices             >=576px
+    3.medium devices            >=768px
+    4.large devices             >=992
+    5.extra large devices       >=1200px
+    -->
+
+    <h1>hello media queries</h1>
+
+    <!-- 
+    @media screen and (max-width:100px)
+    @media all(device type=screen , printable) and (max-width:100px){
+    h1{
+    color:red;
+    
+    }
+    p{
+    }
+    ######css code
+    } -->
+</body>
+</html>
