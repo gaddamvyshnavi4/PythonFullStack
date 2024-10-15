@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        /* in animation duration , name is madatory iteration too */
+        *{
+            background-color: black;
+        }
+        .one{
+            background-color: aqua;
+            width: 100px;
+            height: 100px;
+            animation-name: hello;
+            animation-duration: 3s;
+            animation-iteration-count: 6;
+        }
+        @keyframes hello{
+            /* initial */
+            0%{
+                background-color: orange;
+                transform: scale(1.5);
+            }
+            20%{
+                border-radius: 50%;
+                background-color: red;
+                transform:translateY(200px)
+            }
+            100%{
+                background-color: green;
+                width: 100px;
+                height: 150px;
+                transform: rotate(180deg);
+            }
+        } 
+            
+        
+    </style>
+</head>
+<body>
+    <div class="one">
+        <h1>Hello</h1>
+    </div>
+</body>
+</html>
+
+<!-- 
+ CSS ANIMATIONS
+ -------------
+ 
+ An animation lets an element gradually change from one style to another
+
+ you can change as many css properties you want as many times as you want
+
+ To use CSS animation you must first specify some keyframes for the animation
+
+ keyframes hold what styles the element will have ar certain times
+
+
+ @keyframes Rule
+ ------------
+
+ when you specify CSS styles inside the @keyframes rule, the animation will gradually change from the current style to the new style at certain times
+
+ To get an animation to work, yu must bind the animation to an element
+
+ animation-name:
+ --------------
+ To start the animation initially we want to declare a value in animation-name
+
+ animation-delay:
+ -----------------
+
+ The animation-delay property specifies a delay for the start of an animation
+
+
+ animation-iteration-count:
+ ---------------------------
+ The animation-iteration-count property specifies the number of times an animation should be played/run
+ 
+ 
+ -->

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+    <style>
+        *{
+            border:1px solid red;
+        }
+        .parent{
+            display: grid;
+            grid-template-rows: 200px;
+            grid-template-columns: 300px 400px 200px 800px;
+            /* grid-template-columns: 3fr 4% 2fr; */
+            /* gap:20px; */
+        }
+        .child1{
+            background-color: aqua;
+        }
+
+    </style>
+  </head>
+  <body>
+    <section class="parent">
+      <div class="child1">one</div>
+      <div class="child2">two</div>
+      <div class="child3">three</div>
+      <div class="child1">one</div>
+      <div class="child2">two</div>
+      <div class="child3">three</div>
+    </section>
+  </body>
+</html>
+
+<!-- 
+CSS GRID
+
+The css grid layout module offers a grid-based layout system,with rows and columns,
+ making it easier to design web pages without having to use floats and positioning'\
+
+ Syntax:
+ ----------
+ display:grid;or display:inline-grid
+
+ The spaces between each columns/row are called gaps
+
+ you can adjust the gap size by using one of the following properties:
+ column-gap
+ row-gap
+ gap
+
+
+
+-->
